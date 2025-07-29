@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+</head>
+<style>
+    #mobile{
+        height: 7vh;
+        width: 100vw;
+        background-color: aqua;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        display: none;
+    }
+     #left1 {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+
+    }
+    #center1{
+         display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    #right1{
+         display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+    #lap{
+        height: 7vh;
+        width: 100vw;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #left {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+     #right {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+    }
+    #center{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    @media screen and ( max-width: 600px ){
+        #mobile{
+            display: flex;
+            justify-content: space-around;
+        }
+        #lap{
+            display: none !important;
+        }
+    }
+</style>
+<body>
+    <nav id="mobile">
+        <div id="left1">
+              <p>home</p>
+        </div>
+        <div id="center1">
+            <input type="text " placeholder="search">
+        </div>
+        <div id="right1">
+              <p>home</p>
+        </div>
+
+
+    </nav>
+    <nav id="lap">
+        <div id="left">
+            <p>home</p>
+              <p>home</p>
+                <p>home</p>
+                  <p>home</p>
+        </div>
+        <div id="center">
+            <input type="text" placeholder="search">
+        </div>
+        <div id="right">
+              <p>home</p>
+                <p>home</p>
+                  <p>home</p>
+        </div>
+    </nav>
+</body>
+</html>
