@@ -66,9 +66,39 @@ switch(day){
 //no related--prime,fibonacci,factorial
 //array & string--reverse,frequency
 
-//duplicates
-let no=[1,2,3,4,5,6,1,2,3];
-let obj4={};
-for(let)
+//duplicate
+let numbers=[1,2,3,4,5,6,2,3];
+let object={};
+for(let num of numbers){
+    if(!object[num]){
+        object[num]=1;
+    }
+else{
+    object[num]++;
+}  }
+for (let a1 in object){
+    if(object[a1]>1){
+        console.log("dub"+a1);
+    }
+}
+//unique
+//second largest
+let value=[1,2,3,4,5,1,2,7,6];
+let largest=0;
+let seclargest=0;
 
+for(let i=0; i<value.length; i++){
+if(value[i]>largest){
+    seclargest=largest;
+    largest=value[i];
+
+
+}else if(value[i]>seclargest && value[i] !== largest){
+    seclargest=value[i]
+}
+
+
+}
+console.log("largest:"+largest);
+console.log("seclargest:"+seclargest)
 
