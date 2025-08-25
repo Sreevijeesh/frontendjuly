@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button disabled onclick="click()"><strong>Login</strong></button>
+<p id="ptag">HTML*JAVASCRIPT</p>
+<input onchange="oldtext(this)"type="text">
+<script>
+let flag=true;
+function click(){
+document.getElementById("ptag").innerText=e.value;
+flag-!flag;
+if(flag) {
+document.getElementById("ptag").style.display="none";
+}else{
+document.getElementById("ptag").style.display="block";
+}
+}
+function oldtext(e){
+console.log(e.value);
+}
+</script>
+</body>
+</html>
